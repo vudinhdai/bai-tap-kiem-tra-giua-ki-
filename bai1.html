@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Enter a number:   <input type="number" id="input"/>
+<button  type="button"  onclick="showResult()">show</button>
+
+<script>
+    function checkPrime(num) {
+        if(num < 2){
+            return false;
+        }
+        for(let i = 2; i< Math.sqrt(num); i++){
+            if(num % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+    function showResult() {
+        let number = document.getElementById("input").value;
+        let count = 0;
+        for(let i = 2; i < number; i++){
+            if(checkPrime(i)) {
+                document.write(i + ' ');
+            }
+        }
+    };
+
+</script>
+</body>
+</html>

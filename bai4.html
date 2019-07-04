@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [[2, 3, 4], [5, 6, 7], [9, 6, 5]];
+
+    function sumArr(arr) {
+        let sum =0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (i == j) {
+                    sum += arr[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+    alert("tong 2 duong cheo la " +sumArr(arr));
+</script>
+</body>
+</html>

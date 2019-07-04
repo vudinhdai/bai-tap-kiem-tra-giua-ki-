@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function yearOld(year) {
+        let birthdate = 2019 - year;
+        if (year > 2019) {
+            return ("khong hop le");
+        }
+        return birthdate;
+    }
+
+    let year  = parseInt(prompt("nhap vao nam sinh can tinh :"));
+    alert( yearOld(year));
+</script>
+</body>
+</html>
